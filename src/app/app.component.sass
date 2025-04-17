@@ -79,16 +79,25 @@ nav
     text-align: center
 
 li 
+    width: 500px
+    max-width: 100%
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
     align-items: center
+    word-break: break-all //ennek a segítségével törik meg a text
     word-wrap: break-word
-    overflow-wrap: break-word
     white-space: normal
     min-width: 0
+    text-align: left
+    border: 2px solid $secondary-light
+    border-radius: 60px
+    padding:15px
+    box-sizing: border-box
+    margin-top:20px
+
     button
         flex-shrink: 0
         background-color: $primary-red
         color:$secondary-light
-        margin:20px    
+        margin:20px
+        flex-basis: auto
