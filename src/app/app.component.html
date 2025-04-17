@@ -1,12 +1,14 @@
-<h1>{{title}}</h1>
-<div class="todo-container">
-  <h2>things to do</h2>
-  <input [(ngModel)]="newToDo" type="text" placeholder="new todo">
-  <button (click)="addToDo()">add</button>
-  <ul>
-    <li *ngFor="let td of todos; let i = index">
-      {{td}}
-      <button (click)="deleteToDo(i)">delete</button>
-    </li>
-  </ul>
+<nav><h1 class="nav-logo">{{title}}</h1></nav>
+
+<div class="input-container">
+  <h2 class="header-text">add new things to-do</h2>
+  <input [(ngModel)]="newToDo" class="todo-input"type="text" placeholder="new todo">
+  <button (click)="addToDo()" class="submit-button">add</button>
+  <div class="todos-container">  
+    <ul>
+      <li *ngFor="let td of todos; let i = index">
+        {{td}}
+        <button (click)="deleteToDo(i)">delete</button>
+      </li>
+  </ul></div>
 </div>

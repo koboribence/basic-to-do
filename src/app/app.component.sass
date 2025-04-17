@@ -1,4 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap')
+$primary-red: #DD4045
+$secondary-dark: #242325
+$secondary-light: #FDFFFC
+    
 *
     margin: 0
     padding: 0 
-    
+
+nav 
+    background-color: $primary-red
+    font-family: "Annie Use Your Telescope", cursive
+    font-size: 24px
+    padding: 10px 0px 10px 0px
+    text-align: center
+    color: $secondary-light
+
+.nav-logo
+    cursor: pointer
+    letter-spacing: 5px
+    transition: all 0.4s ease-in-out
+    &:hover
+        letter-spacing: 8px
+
+.header-text
+    font-size: 32px
+    letter-spacing: 4px 
+    font-family: "Annie Use Your Telescope", cursive
+    color:$secondary-light
+
+.input-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin:20px 0px 20px 0px
+
+.todo-input
+    background-color:$secondary-dark
+    border: solid $secondary-light
+    border-radius: 20px
+    color:$secondary-light
+    width: 500px
+    text-align: center
+    font-family: "Annie Use Your Telescope", cursive
+    font-size:24px
+    padding: 15px
+
+    &:focus
+        outline: none
+
+.submit-button
+    border:none
+    border-radius: 20px
+  
