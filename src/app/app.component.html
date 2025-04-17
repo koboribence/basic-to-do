@@ -5,10 +5,10 @@
   <input [(ngModel)]="newToDo" class="todo-input"type="text" placeholder="new to-do">
   <button (click)="addToDo()" class="submit-button">add to-do</button>
   <div class="todos-container">  
-    <ul>
+    <ul class="todo-list">
       <li *ngFor="let td of todos; let i = index">
         {{td}}
-        <button (click)="deleteToDo(i)">delete</button>
+        <button (click)="deleteToDo(i)" class="submit-button">delete</button>
       </li>
   </ul></div>
 </div>

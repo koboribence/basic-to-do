@@ -33,6 +33,7 @@ nav
     color:$secondary-light
 
 .input-container
+    
     display: flex
     flex-direction: column
     align-items: center
@@ -56,6 +57,7 @@ nav
 
 .submit-button
     border:none
+    outline:none
     border-radius: 60px
     font-family: "Annie Use Your Telescope", cursive
     font-size:24px
@@ -65,5 +67,28 @@ nav
     margin-top:10px
 
 .todos-container
+    width: 500px
+    color:$secondary-light
     display: flex
-  
+    flex-direction: column
+    gap: 10px
+    justify-content: center
+    font-family: "Annie Use Your Telescope", cursive
+    font-size:48px
+    font-weight:600
+    text-align: center
+
+li 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    word-wrap: break-word
+    overflow-wrap: break-word
+    white-space: normal
+    min-width: 0
+    button
+        flex-shrink: 0
+        background-color: $primary-red
+        color:$secondary-light
+        margin:20px    
